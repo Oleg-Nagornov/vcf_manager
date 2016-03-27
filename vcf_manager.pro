@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,8 +13,16 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        vcfmanager.cpp
+        vcfmanager.cpp \
+    dataservice.cpp \
+    contact.cpp \
+    phone.cpp \
+    parser.cpp
 
-HEADERS  += vcfmanager.h
+HEADERS  += vcfmanager.h \
+    dataservice.h \
+    contact.h \
+    phone.h \
+    parser.h
 
 FORMS    += vcfmanager.ui
